@@ -6,7 +6,7 @@ var _open = require('gulp-open');
 var watch = require('gulp-watch');
 
 gulp.task('styles', function() {
-  return gulp.src('./*.scss')
+  return gulp.src(['./*.scss'])
     .pipe(compass({
       css: '.',
       sass: '.'
@@ -32,9 +32,9 @@ gulp.task('connect', function() {
 });
 
 gulp.task('watch', function() {
-  watch(['./*.scss'], ['styles']);
-  watch(['./index.html'], ['html']);
-  watch(['./*.js'], ['js']);
+  gulp.watch(['./*.scss'], ['styles']);
+  gulp.watch(['./index.html'], ['html']);
+  gulp.watch(['./*.js'], ['js']);
 });
 
 gulp.task('open', function() {
