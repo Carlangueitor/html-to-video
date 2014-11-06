@@ -1,0 +1,14 @@
+{
+  "name": "git-flow",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Carlangueitor/mini-talks",
+  "authors": [
+    "Carlangueitor <chack14rock@gmail.com>"
+  ],
+  "description": "Git flow presentation.",
+  "main": "index.html",
+  "license": "MIT",
+  "dependencies": {
+    "fullpage.js": "~2.4.3"
+  }
+}

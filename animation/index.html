@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Test</title>
+    <script type="text/javascript" src="TweenMax.min.js"></script>
+    <style type="text/css" media="screen">
+      body {
+        background: white;
+      }
+      #animcontainer {
+        width: 720px;
+        height: 480px;
+        border: 1px solid #ccc;
+        position: relative;
+      }
+
+      #divsito {
+        width: 50px;
+        height: 50px;
+        background: red;
+        position: absolute;
+      }
+
+      #divsote {
+        width: 85px;
+        height: 85px;
+        background: blue;
+        position: absolute;
+        top: 50px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div id="animcontainer">
+      <div id="divsito"></div>
+      <div id="divsote"></div>
+    </div>
+    <script type="text/javascript" charset="utf-8">
+      var divsito = document.getElementById('divsito'),
+      divsote = document.getElementById('divsote');
+
+      var tween = new TimelineMax();
+      tween.to(divsito, 5, { left: 670 });
+      tween.to(divsote, 5, { left: 635 }, '-=5');
+      tween.to(divsote, 5, { left: 0, top:  395});
+      tween.to(divsito, 5, { top: 430}, '-=5');
+      tween.play();
+    </script>
+  </body>
+</html>

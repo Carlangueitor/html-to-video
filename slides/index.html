@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML a Video</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/jquery.fullPage.css" />
+    <link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="bower_components/fullpage.js/jquery.fullPage.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      $(document).ready(function() {
+        $('#fullPage').fullpage({
+          verticalCentered: true,
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="fullPage">
+      <div id="section01" class="section active">
+        <h1>Animaciones HTML a Video</h1>
+        <p>Usando Node.js, SlimerJS y ffmpeg </p>
+        <p class="image-credit">Imagen: http://startupstockphotos.com/</p>
+      </div>
+      <div id="section02" class="section">
+        <h1>El Reto</h1>
+        <ul>
+          <li>Animación hecha con GSAP</li>
+          <li>Video para descarga del usuario</li>
+          <li>Subir Youtube</li>
+        </ul>
+      </div>
+      <div id="section03" class="section alt">
+        <h1>Solución Actual</h1>
+        <ul>
+          <li>Xvfb</li>
+          <li>Midori</li>
+          <li>gtk-recordMyDesktop</li>
+          <li>ffmpeg</li>
+        </ul>
+      </div>
+      <div id="section04" class="section">
+        <h1>Problemas</h1>
+        <ul>
+          <li>Lento</li>
+          <li>Desfasado</li>
+          <li>No <em>paralelizable</em></li>
+          <li>Grabar a velocidad de repoducción.</li>
+        </ul>
+      </div>
+      <div id="section05" class="section">
+        <h1>¡Eureka!</h1>
+        <p>
+          <a href="http://mindthecode.com/recording-a-website-with-phantomjs-and-ffmpeg/">
+            http://mindthecode.com/recording-a-website-with-phantomjs-and-ffmpeg/
+          </a>
+        </p>
+      </div>
+      <div id="section06" class="section">
+        <h1>Más problemas</h1>
+        <ul>
+          <li>Más lento!</li>
+          <li>Frames perdidos</li>
+          <li>Desfasado</li>
+          <li>Estilos Inconsistentes</li>
+        </ul>
+      </div>
+      <div id="section07" class="section">
+        <h1>¿Que se necesita?</h1>
+        <ul>
+          <li>Capturar frame específico</li>
+          <li>Iniciar Animación en momento específico</li>
+          <li>Aumentar velocidad de captura de frames</li>
+        </ul>
+      </div>
+      <div id="section08" class="section">
+        <h1>¡Eureka! (x2)</h1>
+        <ul>
+          <li>No setInterval</li>
+          <li>PhantomJS</li>
+          <li>Procesos paralelos</li>
+          <li>Logs, logs y más logs.</li>
+        </ul>
+      </div>
+      <div id="section09" class="section">
+        <h1>Code time</h1>
+        <img src="img/adventure.gif" class="principal" />
+      </div>
+      <div id="section10" class="section">
+        <h1>Gracias</h1>
+        <p><a href="https://github.com/Carlangueitor/html-to-video">https://github.com/Carlangueitor/html-to-video</p>
+      </div>
+    </div>
+  </body>
+</html>
